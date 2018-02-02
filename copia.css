@@ -3,12 +3,38 @@ img { max-width: 100%;}
 
 body {background-color: pink;}
 
-#main-wraper {border: thin solid black; width: 90%; margin: 0 auto; }
+#main-wraper {border: thin solid black; width: 90%; margin: 0 auto; background-color: white;}
 
-header { border: thin solid yellow; }
+header { border: thin solid yellow; background-color: #66ff66;}
+header img { width:50%; float:left; }
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-#menu { border: thin solid orange;}
+nav { border: thin solid orange; padding-left: 25px;}
 
 section { border: thin solid green;}
 
 footer { border: thin solid blue;}
+
+.scrollmenu {
+    background-color: black;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.scrollmenu a:hover {
+    background-color: green;
+}
+
+.clearfix { clear: both; }

@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+img { max-width: 100%;}
+
+body {background-color: pink;}
+
+#main-wraper {border: thin solid black; width: 90%; margin: 0 auto; }
+
+header { border: thin solid yellow; }
+
+#menu { border: thin solid orange;}
+
+section { border: thin solid green;}
+
+footer { border: thin solid blue;}
