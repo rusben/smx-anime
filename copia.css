@@ -3,12 +3,45 @@ img { max-width: 100%;}
 
 body {background-color: pink;}
 
-#main-wraper {border: thin solid black; width: 90%; margin: 0 auto; }
+#main-wraper {border: thin solid black; width: 90%; margin: 0 auto; background-color: white;}
 
-header { border: thin solid yellow; }
+header { border: thin solid yellow; background-image: url(images/header.jpg); padding-left: 10px;}
+header img { width:20%; float:left; }
+header p { color: white; font-size: 40px; padding-top: 20px; margin: 0; font-family: fantasy;
+  font-weight:bold;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.75px;}
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-#menu { border: thin solid orange;}
+nav { border: thin solid orange; padding-left: 25px;}
 
 section { border: thin solid green;}
 
-footer { border: thin solid blue;}
+footer { border: thin solid blue; background-color: #00002a}
+footer p {color: white; font-size: Arial;}
+footer img { width: 40px;}
+
+.scrollmenu {
+    background-color: #00002a;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.scrollmenu a:hover {
+    background-color: green;
+}
+
+.clearfix { clear: both; }
