@@ -21,16 +21,46 @@ header:after {
 nav {padding-left: 25px; background-color: #4d4d33;}
 
 
-#titulo {width: 96%; margin: 0 auto; padding-top: 40px;}
+#titulo {width: 96%; margin: 0 auto; padding-top: 40px; padding-bottom: 60px;}
 #tiitulo-left {width: 23%; float: left; background-color: green; margin: 0;}
 #entrada {padding: 10px; color: white; text-align: center; font-size: 11px;}
 #tiitulo-right {width: 77%; float: right; background-color: #adad85; height: 100%; padding: 7px;}
 
 #tarjetas{width: 96%; margin: 0 auto;}
 
-.tarjeta img {max-width: 100%;}
-.t1 {width: 66.6%;  float: left;}
-.t2 {width: 33.3%; border: thin solid black; float: left;}
+.tarjeta img {max-width: 100%;  }
+.t1 {width: 66.6%;  float: left; border: thin solid black; overflow: hidden;}
+.t2 {width: 33.3%; border: thin solid black; float: left; overflow: hidden;}
+
+.zoom{
+
+        /* Aumentamos la anchura y altura durante 2 segundos */
+
+        transition: width 0.5s, height 0.5s, transform 0.5s;
+
+        -moz-transition: width 0.5s, height 0.5s, -moz-transform 0.5s;
+
+        -webkit-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s;
+
+        -o-transition: width 0.5s, height 0.5s,-o-transform 0.5s;
+
+    }
+
+    .zoom:hover{
+
+        /* tranformamos el elemento al pasar el mouse por encima al doble de
+
+           su tamaño con scale(2). */
+
+        transform : scale(1.2);
+
+        -moz-transform : scale(1.2);      /* Firefox */
+
+        -webkit-transform : scale(1.2);   /* Chrome - Safari */
+
+        -o-transform : scale(1.2);        /* Opera */
+
+    }
 
 .img-text {
   position: relative;
@@ -44,9 +74,27 @@ nav {padding-left: 25px; background-color: #4d4d33;}
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.7);
   padding: 10px;
+  margin-bottom: -45px;
+
+}
+
+.img-text2 {
+  position: relative;
+  bottom: 70px;
+  right: -10px;
+  width: 95%;
+  color: white;
+  font: bold 15px/20px Arial;
+  text-align: center;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  margin-bottom: -80px;
 }
 
 .img-text:hover{text-decoration: underline;}
+.img-text2:hover{text-decoration: underline;}
 
 footer {background-color: #4d4d33;}
 footer p {color: white; font-size: Arial; margin: 0; padding-bottom: 10px;}
