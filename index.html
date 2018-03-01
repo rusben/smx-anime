@@ -17,14 +17,14 @@
 <div class="clearfix"></div>
 
 
-    <nav w3-include-html="horizontal-menu.html"> </nav>
+    <nav w3-include-html="horizontal-menu.html" id="navbar" > </nav>
 
         <div class="clearfix"></div>
 
     <section>
 
       <div id=titulo>
-          <div id=tiitulo-left> <div id=entrada> ENTRADAS DESTACADAS </div> </div>
+          <div id=tiitulo-left> <div class="letras"> ENTRADAS DESTACADAS </div> </div>
 
           <div id=tiitulo-right>
  &nbsp;
@@ -51,17 +51,22 @@
 
    <div class="tarjeta t2">
      <img class="zoom" src="images/portada4.jpg">
-        <div class="img-text2">LA NUEVA COLLECIÓN DE LA TRIPULACIÓN DE ONE PIECE YA SE PUEDE CONSEGUIR AL COMPLETO</div>
+        <div class="img-text2">LA NUEVA COLLECIÓN DE LA TRIPULACIÓN DE ONE PIECE</div>
    </div>
 
    <div class="tarjeta t2">
      <img class="zoom" src="images/portada5.jpg">
         <div class="img-text2">FIGURA DE BYAKUTA KUCHIKI DE EDICIÓN LIMITADA</div>
    </div>
+</div>
 
-      </div>
+    <div id=espacio>
+       &nbsp;
+    </div>
 
-
+    <div id=noticias>
+       &nbsp;
+    </div>
 
     </section>
 
@@ -70,6 +75,22 @@
     <footer class="footer" w3-include-html="footer.html"> </footer>
 
   </div>
+
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+
 
   <script>
   w3.includeHTML();
