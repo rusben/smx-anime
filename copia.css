@@ -51,7 +51,7 @@ li a:hover:not(.active) {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 89%
 }
 
 .sticky + section {
@@ -140,12 +140,12 @@ footer img { width: 40px; margin: 0;}
 .face {padding-bottom: 5px;}
 
 #espacio {width: 96%; margin: 0 auto; padding-bottom: 30px;}
-#noticias {width: 96%; margin: 0 auto; border: thin solid red;}
-#noticias-left {width: 70%; float: left; background-color: green; margin: 0; border: thin solid black;}
-#ultimas {width:70%; border: thin solid orange; }
-#ultimas-left {width: 20%; float: left; background-color: green; margin: 0;  border: thin solid blue;}*/
-#ultimas-right {width: 50%; float: right; background-color: #adad85; height: 100%; padding: 7px;  border: thin solid red;}*/
-#noticias-right {width: 30%; float: right; background-color: #adad85; height: 100%; padding: 7px; border: thin solid yellow;}
+#main-noticias {width: 96%; margin: 0 auto; border: thin solid red;}
+#noticias-left {width: 70%; float: left; border: thin solid black;}
+#noticias-right {width: 30%; float: right; border: thin solid yellow;}
+#barra-left {width: 20%; float: left; background-color: green; margin: 0;}
+#barra-right {width: 75%; float: left; background-color: #adad85; margin: 0;}
+.letras2 {color: white; text-align: right; font-size: 10px; padding: 11px;}
 
 
 
