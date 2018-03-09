@@ -140,11 +140,46 @@ footer img { width: 40px; margin: 0;}
 .face {padding-bottom: 5px;}
 
 #espacio {width: 96%; margin: 0 auto; padding-bottom: 30px;}
+
 #main-noticias {width: 96%; margin: 0 auto; border: thin solid red;}
 #noticias-left {width: 70%; float: left; border: thin solid black;}
 #noticias-right {width: 30%; float: right; border: thin solid yellow;}
-#barra-left {width: 20%; float: left; background-color: green; margin: 0;}
-#barra-right {width: 75%; float: left; background-color: #adad85; margin: 0;}
+#barra-left {width: 25%; float: left; background-color: green; margin: 0;}
+#barra-right {width: 70%; float: left; background-color: #adad85; margin: 0;}
+#follow-left {width: 30%; float: left; background-color: green; margin: 0;}
+#follow-right {width: 70%; float: right; background-color: #adad85; margin: 0;}
+.bloquenoticia {padding-top: 70px; padding-bottom: 200px;}
+.imagennoticia {width: 40%; float: left; overflow: hidden;}
+.textnoticia {width: 50%; float: left; padding-left: 35px;}
+.letrasnoticias1 {text-align:  left;; font-weight: bold;}
+.letrasnoticias2 {text-align: justify;}
+
+.button {
+    background-color: white;
+    border: 1px solid grey;
+    color: grey;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 .letras2 {color: white; text-align: right; font-size: 10px; padding: 11px;}
 
 
