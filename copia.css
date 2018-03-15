@@ -141,18 +141,23 @@ footer img { width: 40px; margin: 0;}
 
 #espacio {width: 96%; margin: 0 auto; padding-bottom: 30px;}
 
-#main-noticias {width: 96%; margin: 0 auto; border: thin solid red;}
-#noticias-left {width: 70%; float: left; border: thin solid black;}
-#noticias-right {width: 30%; float: right; border: thin solid yellow;}
+#main-noticias {width: 96%; margin: 0 auto; padding-bottom: 980px}
+#noticias-left {width: 70%; float: left;}
+#noticias-right {width: 30%; float: right;}
 #barra-left {width: 25%; float: left; background-color: green; margin: 0;}
 #barra-right {width: 70%; float: left; background-color: #adad85; margin: 0;}
 #follow-left {width: 30%; float: left; background-color: green; margin: 0;}
 #follow-right {width: 70%; float: right; background-color: #adad85; margin: 0;}
-.bloquenoticia {padding-top: 70px; padding-bottom: 200px;}
+.bloquenoticia {padding-top: 65px; padding-bottom: 180px;}
+.bloquenoticia2 {padding-top: 75px;}
+.bloquenoticia3 {padding-top: 25px; padding-bottom: 180px;}
 .imagennoticia {width: 40%; float: left; overflow: hidden;}
 .textnoticia {width: 50%; float: left; padding-left: 35px;}
 .letrasnoticias1 {text-align:  left;; font-weight: bold;}
 .letrasnoticias2 {text-align: justify;}
+#mas {width: 100%; float: left; background-color: green; margin: 0;}
+.barra {width: 95%; float: left; color: green;}
+#video {padding-top: 70px;}
 
 .button {
     background-color: white;
