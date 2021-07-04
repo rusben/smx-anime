@@ -17,19 +17,150 @@
 <div class="clearfix"></div>
 
 
-    <nav class="scrollmenu" w3-include-html="horizontal-menu.html"> </nav>
+    <nav w3-include-html="horizontal-menu.html" id="navbar" > </nav>
 
         <div class="clearfix"></div>
 
     <section>
-  section
-    </section>
+
+      <div id=titulo>
+          <div id=tiitulo-left> <div class="letras"> ENTRADAS DESTACADAS </div> </div>
+
+          <div id=tiitulo-right>
+ &nbsp;
+          </div>
+      </div>
+
+      <div id=tarjetas>
+      <div class="tarjeta t1">
+			       <img class="zoom" src="images/portada1.jpg">
+			          <div class="img-text">LAS NUEVAS FIGURAS DE SASUKE Y ITACHI LLEGARAN EN MARZO Y ABRIL</div>
+		    </div>
+
+      <div class="tarjeta t2">
+        <img class="zoom" src="images/portada2.jpg">
+           <div class="img-text2">LAS MEJORES FIGURAS DE GOKU Y VEGETA</div>
+   </div>
+
+<div class="clearfix"></div>
+
+   <div class="tarjeta t2">
+     <img class="zoom" src="images/portada3.jpg">
+        <div class="img-text2">LAS FIGURAS DE HINATA Y KAGEYAMA EN PLENA ACCIÓN</div>
+   </div>
+
+   <div class="tarjeta t2">
+     <img class="zoom" src="images/portada4.jpg">
+        <div class="img-text2">LA NUEVA COLLECIÓN DE LA TRIPULACIÓN DE ONE PIECE</div>
+   </div>
+
+   <div class="tarjeta t2">
+     <img class="zoom" src="images/portada5.jpg">
+        <div class="img-text2">FIGURA DE BYAKUTA KUCHIKI DE EDICIÓN LIMITADA</div>
+   </div>
+</div>
+
+    <div id=espacio>
+       &nbsp;
+    </div>
+
+    <div id=main-noticias>
+       <div id=noticias-left> <div id=barra-left> <div class="letras"> ÚLTIMAS NOTICIAS </div> </div>
+
+       <div id=barra-right>
+         <div class=letras2> NOTICIAS DRAGON BALL NARUTO HAIKYUU ONE PIECE BLEACH </div>
+       </div>
+       <div class=bloquenoticia>
+         <div class=imagennoticia> <img class="zoom" src="images/noticias1.jpg"> </div>
+          <div class=textnoticia> <div class=letrasnoticias1> Impresionante figura de resina: Gohan adulto vs Super Buu </div>
+          <br>
+            <div class=letrasnoticias2> En el mundo de las figuras hay una clase de ellas que para muchos esta por encima del resto y estan son las figuras de resina.
+            Hechas a mano, grandes, muchos detalles y colores. Como podemos observar en esta figura... </div>
+            <br>
+            <a href="#" class="button">LEER MÁS</a>
+        </div>
+     </div>
+
+        <div class=bloquenoticia2> <hr class="barra"> </div>
+
+     <div class=bloquenoticia3>
+       <div class=imagennoticia> <img class="zoom" src="images/noticias2.jpg"> </div>
+        <div class=textnoticia> <div class=letrasnoticias1> Digivolving Spirits: 01 Wargreymon </div>
+        <br>
+          <div class=letrasnoticias2> Llega la nueva colección de figuras de Digimon la Digivolving Spirits. Esta colección traera alguno de los Digimon mas míticos del anime
+          y se podra cambiar de su forma inicial a la final. Esta figura salió... </div>
+          <br>
+          <a href="#" class="button">LEER MÁS</a>
+      </div>
+     </div>
+
+     <div class=bloquenoticia2> <hr class="barra"> </div>
+
+     <div class=bloquenoticia3>
+       <div class=imagennoticia> <img class="zoom" src="images/noticias3.jpg"> </div>
+        <div class=textnoticia> <div class=letrasnoticias1>  Figura Saitama XTRA 1/10 Tsume Art </div>
+        <br>
+          <div class=letrasnoticias2> Una vez mas Tsume Art saca una figuras impresionante. Esta vez será del heroe revolucionario que nos tiene a muchos a al espera de su segunda temportada.
+          Es decir una figura de Saitama del anime de One Punch. Impresionantes detalles y... </div>
+          <br>
+          <a href="#" class="button">LEER MÁS</a>
+      </div>
+     </div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+   <div id=mas> <div class="letras"> LEER MÁS NOTICIAS </div> </div>
+
+
+   </div>
+
+       <div id=noticias-right> <div id=follow-left> <div class="letras"> SÍGUENOS </div> </div>
+
+       <div id=follow-right>
+         <div class=letras2>  &nbsp; </div>
+       </div>
+
+        <div id=video> <iframe width="100%" height="200px" src="https://www.youtube.com/embed/Nrd7gjx1T0s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
+
+     </div>
+    </div>
+
+    <div id=titulo>
+        <div id=tiitulo-left> <div class="letras"> OTRAS NOTICIAS </div> </div>
+
+        <div id=tiitulo-right>
+&nbsp;
+        </div>
+    </div>
+
+  </section>
 
         <div class="clearfix"></div>
 
-    <footer class="footer" w3-include-html="footer.html"> </footer>
+    <footer class="footer" w3-include-html="footer.html">
 
-  </div>
+    </footer>
+
+
+
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+
 
   <script>
   w3.includeHTML();
